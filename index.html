@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <!--My SCSS-->
@@ -31,15 +34,15 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Soluções</a>
+                    <a class="nav-link" href="#services">Soluções</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nós</a>
+                    <a class="nav-link" href="#about">Sobre Nós</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Portfólio</a>
+                    <a class="nav-link" href="#professionals">Equipe</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item-contact">
                     <a class="nav-link contact" target="_blank" href="https://wa.me/5511950427159">Contato</a>
                   </li>
                 </ul>
@@ -55,14 +58,16 @@
               </h2>
 
               <div class="button">
-                <a href="https://wa.me/5511950427159">Venha para o digital</a>
+                <button class="contact-btn" onclick="window.location.href='https://wa.me/5511950427159'" target="_blank">
+                  VENHA PARA O DIGITAL
+                </button>
               </div>
             </div>
           </div>
     </header>
     <main>
       <div class="container">
-        <section class="services">
+        <section class="services" id="services">
           <div class="title">
             <h2>
               Serviços - Marketing Digital
@@ -306,7 +311,7 @@
         </section>
       </div><!--container div-->
       <!--Section 2-->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="title">
             <h2>
@@ -350,7 +355,7 @@
       </section>
       <img src="images/wavesOpacity.svg"> <!--wave svg-->
       <!--section 3-->
-      <section class="professionals">
+      <section class="professionals" id="professionals">
         <div class="container">
           <div class="title">
             <h2>
@@ -366,82 +371,68 @@
           <div class="cards">
             <!--card 1-->
             <div class="card">
-                <ul>
-                  <li>
-                    <a href="https://github.com/albertoaugusto" target="_blank"><img src="node_modules/bootstrap-icons/icons/github.svg" alt="github" width="20px" height="20px"></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/alberto-souza-b4a1451b5/" target="_blank"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt="linkedin" width="20px" height="20px"></a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM=" target="_blank" ><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt="instagram" width="20px" height="20px"></a>
-                  </li>
-                </ul>
-                <img src="images/professionals-card/card-photo.png" alt="profile-pic">
-                <div class="con-text">
-                  <h2>
-                    Alberto Souza
-                  </h2>
-                  <p>
-                    Desenvolvedor Front-End | Gestor de Tráfego | Designer Gráfico
-                  </p>
-                </div>  
-            </div>
-            <!--card 2-->
-            <div class="card">
-              <ul>
-                <li>
-                  <a href="https://github.com/albertoaugusto" target="_blank"><img src="node_modules/bootstrap-icons/icons/github.svg" alt="github" width="20px" height="20px"></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/alberto-souza-b4a1451b5/" target="_blank"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt="linkedin" width="20px" height="20px"></a>
-                </li>
-                <li>
-                  <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM=" target="_blank" ><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt="instagram" width="20px" height="20px"></a>
-                </li>
-              </ul>
-              <img src="images/professionals-card/card-photo.png" alt="profile-pic">
-              <div class="con-text">
-                <h2>
-                  Alberto Souza
-                </h2>
-                <p>
-                  Desenvolvedor Front-End | Gestor de Tráfego | Designer Gráfico
-                </p>
+              <img src="images/professionals-card/profile-pic-alberto.png" alt="" />
+              <div class="profile-details">
+                <h3>Alberto Souza</h3>
+                <p>Desenvolvedor Fullstack | Gestor de Tráfego</p>
+                <div class="social-media-list">
+                  <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://github.com/albertoaugusto"><i class="fa-brands fa-github"></i></a>
+                </div>
               </div>
             </div>
-            <!--card 3-->
-            <div class="card">
-              <ul>
-                <li>
-                  <a href="https://github.com/albertoaugusto" target="_blank"><img src="node_modules/bootstrap-icons/icons/github.svg" alt="github" width="20px" height="20px"></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/alberto-souza-b4a1451b5/" target="_blank"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt="linkedin" width="20px" height="20px"></a>
-                </li>
-                <li>
-                  <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM=" target="_blank" ><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt="instagram" width="20px" height="20px"></a>
-                </li>
-              </ul>
-              <img src="images/professionals-card/card-photo.png" alt="profile-pic">
-              <div class="con-text">
-                <h2>
-                  Alberto Souza
-                </h2>
-                <p>
-                  Desenvolvedor Front-End | Gestor de Tráfego | Designer Gráfico
-                </p>
-              </div>    
+          <!--card 2-->
+          <div class="card">
+            <img src="images/professionals-card/profile-pic-nalanda.png" alt="" />
+            <div class="profile-details">
+              <h3>Nalanda Araújo</h3>
+              <p>Chefe de Vendas | Desenvolvedora Front-End</p>
+              <div class="social-media-list">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--card 3-->
+          <div class="card">
+            <img src="images/professionals-card/card-photo.png" alt="" />
+            <div class="profile-details">
+              <h3>Letícia Souza</h3>
+              <p>Desenvolvedora Back-End | Analista de Sistemas</p>
+              <div class="social-media-list">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--card 4-->
+          <div class="card">
+            <img src="images/professionals-card/card-photo.png" alt="" />
+            <div class="profile-details">
+              <h3>José Alberto</h3>
+              <p>Desenvolvedor Back-End | Analista de Sistemas</p>
+              <div class="social-media-list">
+                <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://instagram.com/albertoodev?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/albertoaugusto"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
           </div>
           </div>
         </div>    
       </section>
-
-      <a class="wpp-btn" href="https://wa.me/5511" target="_blank">
+        
+      <a class="wpp-btn" href="https://wa.me/5511950427159" target="_blank">
         <img src="node_modules/bootstrap-icons/icons/whatsapp.svg">
       </a>
   </main>
+  <!--Footer-->
   
+
+
+  <!--My JS-->
+  <script src="js/scroll.js"></script>
   <!--Bootstrap JS-->
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.js"></script>
